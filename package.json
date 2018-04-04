@@ -1,0 +1,9 @@
+{
+  "name": "rentalsunited",
+  "version": "1.0.5",
+  "description": "Rentals United soap api plugin.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Paulo Santos <tm.paulo.santos@gmail.com>",
+  "license": "ISC"
+}
