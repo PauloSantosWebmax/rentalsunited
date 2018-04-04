@@ -9,9 +9,6 @@ let RU = require('rentalsunited')
 // Set credentials to your app
 RU.setCredentials('email', 'password')
 
-// install vue dependencies
-npm run install_api_packages
-
 // Basic call to Rentals united
 RU.getOwners().then(res => console.log(res.data))
               .catch(err => console.log(err))
