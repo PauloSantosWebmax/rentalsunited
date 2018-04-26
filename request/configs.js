@@ -1,4 +1,6 @@
 
+'use strict'
+
 module.exports = {
     endpoint: 'http://rm.rentalsunited.com/api/Handler.ashx',
     options: {
@@ -9,9 +11,5 @@ module.exports = {
             'Keep-Alive': '300',
             'Connection': 'keep-alive'
         }
-    },
-    credentials: {
-        user: process.env.RU_USERNAME,
-        pass: process.env.RU_PASSWORD
     }
 }

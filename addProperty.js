@@ -1,6 +1,8 @@
 
 'use strict'
 
+const RURequest = require('./request')
+
 // grab the authentication
 const authentication = require('./authentication')
 
@@ -248,7 +250,7 @@ const addProperty = (property) => {
 
     let now = new Date().toISOString().split('T')[0];
 
-    return `<Push_PutProperty_RQ>
+    return RURequest(`<Push_PutProperty_RQ>
                 ${authentication()}
                 <Property>
                     <PUID BuildingID="-1">-1</PUID>
@@ -286,7 +288,7 @@ const addProperty = (property) => {
                     ${compositionRoomsAmenities(property.CompositionRoomsAmenities)}
                     ${amenities(property.Amenities)}
                 </Property>
-            </Push_PutProperty_RQ>`;
+            </Push_PutProperty_RQ>`);
 }
 
 module.exports = addProperty
