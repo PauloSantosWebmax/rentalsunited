@@ -1,22 +1,26 @@
 {
   "name": "rentalsunited",
-  "version": "1.0.26",
-  "description": "",
+  "version": "1.0.41",
+  "description": "Package for Rentals United soap api.",
   "main": "index.js",
   "scripts": {},
   "keywords": [
     "RentalsUnited",
+    "Rentals United",
     "Rentals",
     "United",
-    "nodejs"
+    "nodejs",
+    "node",
+    "node js",
+    "js"
   ],
   "author": "Paulo Santos <tm.paulo.santos@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0"
   },
-  "repository": { 
+  "repository": {
     "type": "git",
-    "url": "https://github.com/PauloSantosWebmax/rentalsunited"
+    "url": "https://github.com/SantosPaulo/rentalsunited"
   }
 }

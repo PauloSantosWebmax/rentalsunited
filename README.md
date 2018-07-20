@@ -53,7 +53,7 @@ Create seasons for a specific property:
 
 ```
 // create seasons for a single property
-RU.setSeason('125893',{
+RU.setSeason('125893', {
     "DateFrom": "2018-04-26",
     "DateTo": "2018-04-30",
     "Price": "100",
@@ -65,6 +65,28 @@ RU.setSeason('125893',{
         }
     ]
 })
+```
+
+Set calendar dates
+
+```
+// set dates
+RU.setCalendar('0025625', [
+   { DateFrom: '2018-05-01', DateTo: '2018-05-05', Value: true }
+])
+.then(result => console.log(result.data))
+.catch(err => console.log(err))
+```
+
+Set min stay dates
+
+```
+// set dates
+RU.setMinStayNights('0025625', [
+   { DateFrom: '2018-07-04', DateTo: '2018-07-29', NumNights: '10' }
+])
+.then(result => console.log(result.data))
+.catch(err => console.log(err))
 ```
 
 _* All methods should return an XML document_
@@ -85,6 +107,7 @@ _* All methods should return an XML document_
 - getRoomAmenities()
 - getAmenities()
 - getPropertyTypes()
+- getPropertyTypesOTA()
 - getLocationCurrencies()
 - getCalendar(pid, blocks)
 - getRates(pid)
@@ -92,13 +115,19 @@ _* All methods should return an XML document_
 - getRealtimeRates(pid, fromDate, toDate)
 - getMinstay(pid)
 - bookProperty(reservation)
-- cancelBooking()
+- cancelBooking(bookingId)
 - getReservations(fromDate, toDate, locationID)
 - getPropertyPrice(pid, fromDate, toDate)
-- setCalendar(pid, fromDate, toDate, pax, RUPrice, clientPrice, alreadyPaid, name, surName, email, phone, skypeId, address, zipcode, cityId)
+- setCalendar(pid, dates)
 - setLNMPutHandlerUrl(url)
 - setSeason(pid, seasons)
 - getPricesAndAvailability(pid, dateFrom, dateTo)
+- setMinStayNights(pid, datesRange)
+- getMinStayNights(pid)
+- listLanguages()
+- listAdditionFeesKinds()
+- listAdditionFeesTypes()
+- listAdditionFeesDiscriminators()
 
 ***Rentals United documentation***
 

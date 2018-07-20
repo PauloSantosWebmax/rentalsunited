@@ -18,12 +18,12 @@ let username = '',
 const setCredentials = (u, p) => {
   username = u
   password = p
-} 
+}
 
 /**
  * Get authentication
  *
- * @return string | xml authentication block 
+ * @return string | xml authentication block
  */
 const authentication = () => {
     return `<Authentication>
