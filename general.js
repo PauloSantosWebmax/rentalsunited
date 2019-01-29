@@ -118,7 +118,7 @@ const getOwnerDetails = (ownerId) => {
 }
 
 /**
- * Get a list of all properties in a location
+ * Get a list of all properties owned by a person
  *
  * @param mixed locCode, Location ID listed in getLocations()
  * @return xmlDocument
